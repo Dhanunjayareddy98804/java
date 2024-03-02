@@ -1,11 +1,33 @@
 class NeckBandTester{
 public static void main(String boat[]){
-boolean isConnected= NeckBand.powerOnOrOff();
-System.out.println("finally the NeckBand turnedOn:" + isConnected);
+ boolean isComnnected = NeckBand.onOrOff();
+System.out.println("finally NeckBand is connected:" + isConnected);
 
-boolean isConnected1=NeckBand.powerOnOrOff();
-System.out.println("finally the NeckBand turnedOff:" + isConnected1);
+Speaker.increaseVolume();
+Speaker.increaseVolume();
+Speaker.increaseVolume();
+Speaker.increaseVolume();
+Speaker.increaseVolume();
+Speaker.increaseVolume();
+Speaker.increaseVolume();
+Speaker.increaseVolume();
+Speaker.increaseVolume();
+Speaker.increaseVolume();
 
+Speaker.decreaseVolume();
+Speaker.decreaseVolume();
+Speaker.decreaseVolume();
+Speaker.decreaseVolume();
+boolean isComnnected1= NeckBand.onOrOff();
+System.out.println("finally NeckBand is connected:" + isConnected1);
+
+
+Speaker.decreaseVolume();
+Speaker.decreaseVolume();
+Speaker.decreaseVolume();
+Speaker.decreaseVolume();
+Speaker.decreaseVolume();
+Speaker.decreaseVolume();
 
 }
 

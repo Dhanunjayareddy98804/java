@@ -1,0 +1,28 @@
+class Restaurant {
+ public static void main(String raju[]){
+	String restaurantName[] = "rajaram";
+	String location[] = "bellary";
+	String ownerName = "raja";
+	String vegSoups[] = {"vegetable soup" , "mix vegetable soup" , "hot soup" , "tomato soup" , "corn soup" , "rasam soup" , "sambar soup"};
+	int    vegSoupsPricing[] = {395 , 395 , 395 , 395 , 395 , 395 ,395};
+	String southIndianSpecial[] =	{"idli" , "dosa" , "vada" , "masala dosa" , "onion dosa" , "utapam" , "set dosa" , "poori"};
+	int    southIndianSpecial[] = {60, 60, 60, 60, 60, 60, 60, 60};
+	String nonVegeterian[] = {"kabab" , "chickenbiriyani" , "hyderbadbiriyani" , "chilli chicken" , "kadai chicken" , "butter chicken" , "chicken masala"};
+	int    nonVegeterian[] = {200, 200, 200, 200, 200, 200, 200};
+
+    System.out.println(" + vegSoups[0] + " , " + vegSoupsPricing[0] + ");	
+ 
+ 
+ 
+ 
+ 
+ 
+ }
+
+
+
+
+
+
+
+}

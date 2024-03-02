@@ -1,22 +1,21 @@
-class Television{
+class Speaker{
 static boolean isConnected;
- 
-public static boolean powerOnOrOff(){
-System.out.println("inside powerOnOrOff");
-if(isConnected==false){
-isConnected=true;
-System.out.println("is Television powerOn:" + isConnected);
-}
-else if(isConnected==true){
-isConnected=false;
-System.out.println("is Television powerOff:" + isConnected);
-}
-return  isConnected;
 static int maxVolume=10;
 static int minVolume;
 static int presentVolume;
 
+public static boolean onOrOff(){
+System.out.println("inside onOrOff()");
+if(isConnected == false){
+isConnected=true;
+System.out.println("Is Speaker connected:" + isConnected);
+}
+else if(isConnected == true){
+isConnected=false;
+System.out.println("Is Speaker connected:" + isConnected);
 
+}
+return isConnected;
 }
 
 public static void increaseVolume(){
@@ -32,7 +31,7 @@ else{
 	}
 else{
 	
-	System.out.println("koti..kan kansalva..Tv on madu..");
+	System.out.println("koti..kan kansalva..speaker on madu..");
 }	
 System.out.println("end of increaseVolume()");
 	return;	
@@ -49,10 +48,11 @@ public static void decreaseVolume(){
 			System.out.println("Min volume reached"); 
 		 }		
 		}else{
-	System.out.println("koti..kan kansalva..Tv on madu..");
+	System.out.println("koti..kan kansalva..speaker on madu..");
 	}		
 	System.out.println("end of decreaseVolume()");
 	return;
 	}
+	
+} 
 
-}

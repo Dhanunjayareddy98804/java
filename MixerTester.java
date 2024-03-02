@@ -1,10 +1,33 @@
 class MixerTester{
 public static void main(String prestige[]){
-boolean isConnected= Mixer.powerOnOrOff();
-System.out.println("finally the television turnedOn:" + isConnected);
+ boolean isComnnected = Mixer.onOrOff();
+System.out.println("finally Mixer is connected:" + isComnnected);
 
-boolean isConnected1=Mixer.powerOnOrOff();
-System.out.println("finally the television turnedOff:" + isConnected1);
+Mixer.increaseSpeed();
+Mixer.increaseSpeed();
+Mixer.increaseSpeed();
+Mixer.increaseSpeed();
+Mixer.increaseSpeed();
+Mixer.increaseSpeed();
+Mixer.increaseSpeed();
+Mixer.increaseSpeed();
+Mixer.increaseSpeed();
+Mixer.increaseSpeed();
+
+Mixer.decreaseSpeed();
+Mixer.decreaseSpeed();
+Mixer.decreaseSpeed();
+Mixer.decreaseSpeed();
+boolean isComnnected1= Mixer.onOrOff();
+System.out.println("finally Mixer is connected:" + isConnected1);
+
+
+Mixer.decreaseSpeed();
+Mixer.decreaseSpeed();
+Mixer.decreaseSpeed();
+Mixer.decreaseSpeed();
+Mixer.decreaseSpeed();
+Mixer.decreaseSpeed();
 
 
 }

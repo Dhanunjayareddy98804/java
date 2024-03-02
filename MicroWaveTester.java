@@ -1,11 +1,34 @@
 class MicroWaveTester{
 public static void main(String bajaj[]){
-boolean isConnected= MicroWave.powerOnOrOff();
-System.out.println("finally the microwave turnedOn:" + isConnected);
+ boolean isComnnected = MicroWave.onOrOff();
+System.out.println("finally MicroWave is connected:" + isComnnected);
 
-boolean isConnected1=MicroWave.powerOnOrOff();
-System.out.println("finally the microwave turnedOff:" + isConnected1);
+MicroWave.increaseSpeed();
+MicroWave.increaseSpeed();
+MicroWave.increaseSpeed();
+MicroWave.increaseSpeed();
+MicroWave.increaseSpeed();
+MicroWave.increaseSpeed();
+MicroWave.increaseSpeed();
+MicroWave.increaseSpeed();
+MicroWave.increaseSpeed();
+MicroWave.increaseSpeed();
 
+MicroWave.decreaseSpeed();
+MicroWave.decreaseSpeed();
+MicroWave.decreaseSpeed();
+MicroWave.decreaseSpeed();
+
+boolean isComnnected1= MicroWave.onOrOff();
+System.out.println("finally MicroWave is connected:" + isComnnected1);
+
+
+MicroWave.decreaseSpeed();
+MicroWave.decreaseSpeed();
+MicroWave.decreaseSpeed();
+MicroWave.decreaseSpeed();
+MicroWave.decreaseSpeed();
+MicroWave.decreaseSpeed();
 
 }
 

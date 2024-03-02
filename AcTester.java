@@ -1,12 +1,33 @@
 class AcTester{
 public static void main(String prestige[]){
-boolean isConnected= Ac.powerOnOrOff();
-System.out.println("finally the Ac turnedOn:" + isConnected);
+ boolean isComnnected = Ac.onOrOff();
+System.out.println("finally Ac is connected:" + isConnected);
 
-boolean isConnected1=Ac.powerOnOrOff();
-System.out.println("finally the Ac turnedOff:" + isConnected1);
+Ac.increaseTemp();
+Ac.increaseTemp();
+Ac.increaseTemp();
+Ac.increaseTemp();
+Ac.increaseTemp();
+Ac.increaseTemp();
+Ac.increaseTemp();
+Ac.increaseTemp();
+Ac.increaseTemp();
+Ac.increaseTemp();
+
+Ac.decreaseTemp();
+Ac.decreaseTemp();
+Ac.decreaseTemp();
+Ac.decreaseTemp();
+boolean isComnnected1= Ac.onOrOff();
+System.out.println("finally Ac is connected:" + isConnected1);
 
 
+Ac.decreaseTemp();
+Ac.decreaseTemp();
+Ac.decreaseTemp();
+Ac.decreaseTemp();
+Ac.decreaseTemp();
+Ac.decreaseTemp();
 }
 
 
