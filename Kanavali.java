@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class Kanavali{
 
 static String name = "7 seasons";
@@ -38,6 +39,19 @@ public static void getFoodItems(){
 		}
 		System.out.println("After updating foodItem:");
 		return isUpdated;
+	}
+	
+	public static void deleteFoodItem(String foodItem){
+		System.out.println("before deleting foodItem:");
+		int newIndex, oldIndex;
+		for(newIndex=0,oldIndex=0; oldIndex<foodItems.length;oldIndex++){
+			if(foodItems[oldIndex] != foodItem){
+				foodItems[newIndex++] = foodItems[oldIndex];
+			}
+		}
+		System.out.println("After deleting foodItem:");
+		foodItems = Arrays.copyOf(foodItems,newIndex);
+		return;
 	}
 
 }

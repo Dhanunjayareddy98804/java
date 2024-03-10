@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class AutoMobileShop {
 
     static String name = "arush";
@@ -38,5 +39,18 @@ class AutoMobileShop {
 		}
 		System.out.println("After updating PartItems:");
 		return isUpdated;
+	}
+	
+	public static void deletePartItems(String partItem){
+		System.out.println("Before deleting the PartItems"); 
+		int newIndex, oldIndex;
+		for(newIndex=0,oldIndex=0; oldIndex < partItems.length;oldIndex++){
+			if(partItems[oldIndex] != partItem){
+				partItems[newIndex++] = partItems[oldIndex];
+			}
+		}
+		System.out.println("After deleting the partItems"); 
+        partItems = Arrays.copyOf(partItems,newIndex);
+		return;
 	}
 }

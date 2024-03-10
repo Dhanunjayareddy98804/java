@@ -17,6 +17,8 @@ public static void main(String[] stationary)
 	Stationary.getStationary();
 	boolean isStationarysAdded = Stationary.updateStationarys("a4 sheet","pencil kit");
 	Stationary.getStationary();
+	Stationary.deleteStationarys("note pad");
+	Stationary.getStationary();
 
 }
 }

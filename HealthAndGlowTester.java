@@ -18,6 +18,8 @@ public static void main(String[] items)
 	HealthAndGlow.getItems();
 	boolean isItemsAdded = HealthAndGlow.updateItems("lipstick","lakme");
 	HealthAndGlow.getItems();
+	HealthAndGlow.deleteItems("olav");
+	HealthAndGlow.getItems();
 
 }
 }

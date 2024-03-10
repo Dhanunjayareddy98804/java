@@ -16,6 +16,8 @@ class PetShopTester {
         PetShop.getAccessories();
 		boolean isAccessoriesAdded = PetShop.updateAcessories("pedigree","Dog Collar");
         PetShop.getAccessories();
+        PetShop.deleteAccessories("Pet Brush");
+        PetShop.getAccessories();
 
     }
 }

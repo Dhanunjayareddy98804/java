@@ -18,6 +18,8 @@ public static void main(String[] products)
 	Ecommerce.getProducts();
 	boolean isItemsAdded = Ecommerce.updateItems("bag","mobile");
  	Ecommerce.getProducts();
+ 	Ecommerce.deleteItems("shirt");
+ 	Ecommerce.getProducts();
 
 }
 }

@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class MedicalShop{
 
     static String name = "rajaram";
@@ -39,4 +40,18 @@ class MedicalShop{
 		System.out.println("After updating Items:");
 		return isUpdated;
 	}
+	
+	public static void deleteItems(String item){
+		System.out.println("Before deleting the Items"); 
+		int newIndex, oldIndex;
+		for(newIndex=0,oldIndex=0; oldIndex < items.length;oldIndex++){
+			if(items[oldIndex] != item){
+				items[newIndex++] = items[oldIndex];
+			}
+		}
+		System.out.println("After deleting the Items"); 
+        items = Arrays.copyOf(items,newIndex);
+		return;
+	}
+	
 }

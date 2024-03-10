@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class HotComs {
 
     static String name = "HotComs";
@@ -38,5 +39,18 @@ class HotComs {
 		}
 		System.out.println("After updating products:");
 		return isUpdated;
+	}
+	
+	public static void deleteProducts(String product){
+		System.out.println("Before deleting the Products"); 
+		int newIndex, oldIndex;
+		for(newIndex=0,oldIndex=0; oldIndex < products.length;oldIndex++){
+			if(products[oldIndex] != product){
+				products[newIndex++] = products[oldIndex];
+			}
+		}
+		System.out.println("After deleting the products"); 
+        products = Arrays.copyOf(products,newIndex);
+		return;
 	}
 }

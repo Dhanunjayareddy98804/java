@@ -16,6 +16,8 @@ class DecathlonTester {
         Decathlon.getProducts();
 		boolean isProductsAdded = Decathlon.updateProducts("tent","Football");
         Decathlon.getProducts();
+        Decathlon.deleteProducts("Football");
+        Decathlon.getProducts();
 
     }
 }

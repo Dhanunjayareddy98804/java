@@ -18,6 +18,8 @@ public static void main(String[] items)
 	Suppliments.getItems();
 	boolean isItemsAdded = Suppliments.updateItems("vitamin c","vitamin b12");
 	Suppliments.getItems();
+	Suppliments.deleteItems("360 gut");
+	Suppliments.getItems();
 
 }
 }

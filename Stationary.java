@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class Stationary{
 
 static String name = "Ambika";
@@ -40,5 +41,18 @@ public static void getStationary(){
 		}
 		System.out.println("After updating stationarys:");
 		return isUpdated;
+	}
+	
+	public static void deleteStationarys(String stationary){
+		System.out.println("Before deleting the Stationarys"); 
+		int newIndex, oldIndex;
+		for(newIndex=0,oldIndex=0; oldIndex < stationarys.length;oldIndex++){
+			if(stationarys[oldIndex] != stationary){
+				stationarys[newIndex++] = stationarys[oldIndex];
+			}
+		}
+		System.out.println("After deleting the stationarys"); 
+        stationarys = Arrays.copyOf(stationarys,newIndex);
+		return;
 	}
 }

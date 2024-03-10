@@ -17,6 +17,8 @@ public static void main(String[] items)
 	MedicalShop.getItems();
 	boolean isItemsAdded = MedicalShop.updateItems("dettol","adderall");
 	MedicalShop.getItems();
+	MedicalShop.deleteItems("lyrica");
+	MedicalShop.getItems();
 
 }
 }

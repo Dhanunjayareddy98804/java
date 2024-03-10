@@ -15,6 +15,8 @@ public static void main(String[] foodItems)
 	boolean isFoodItemAdded1 = Kanavali.updateFoodItem("panner","rajma chawal");
 
 	Kanavali.getFoodItems();	
+	Kanavali.deleteFoodItem("chiken tikka");	
+	Kanavali.getFoodItems();	
 
 
 }

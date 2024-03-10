@@ -16,6 +16,8 @@ class HotComsTester {
         HotComs.getProducts();
 		boolean isProductsAdded = HotComs.updateProducts("strawberry","apple");
 		HotComs.getProducts();
+		HotComs.deleteProducts("orange");
+		HotComs.getProducts();
 
     }
 }

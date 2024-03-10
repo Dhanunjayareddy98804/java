@@ -1,3 +1,4 @@
+import java.util.Arrays;
 class MobileAccessories{
    // public static void main(String acc[])
 	static String name = "Phone";
@@ -46,6 +47,19 @@ class MobileAccessories{
 			 System.out.println("After updating the MobileAccessories");
 			        return isUpdated;
 	 }
+	
+	public static void deleteAccessories(String accessorie){
+		System.out.println("Before deleting the MobileAccessories"); 
+		int newIndex, oldIndex;
+		for(newIndex=0,oldIndex=0; oldIndex < accessories.length;oldIndex++){
+			if(accessories[oldIndex] != accessorie){
+				accessories[newIndex++] = accessories[oldIndex];
+			}
+		}
+		System.out.println("After deleting the MobileAccessories"); 
+        accessories = Arrays.copyOf(accessories,newIndex);
+		return;
+	}
 
 }
 

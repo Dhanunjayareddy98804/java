@@ -16,6 +16,8 @@ public static void main(String[] accessories)
 	MobileAccessories.getAccessories();
 	boolean isMobileAccessoriesAdded = MobileAccessories.updateAccessories("Bluetooth","Tempered glass");
 
-	MobileAccessories.getAccessories();	
+	MobileAccessories.getAccessories();
+	MobileAccessories.deleteAccessories("connectors");	
+	MobileAccessories.getAccessories();
 }
 }

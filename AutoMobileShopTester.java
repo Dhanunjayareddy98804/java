@@ -17,6 +17,8 @@ public static void main(String[] parts)
 	AutoMobileShop.getPartItem();
 	boolean isPartItemsAdded = AutoMobileShop.updatePartItems("horn","engine");
 	AutoMobileShop.getPartItem();
+	AutoMobileShop.deletePartItems("brakes");
+	AutoMobileShop.getPartItem();
 
 }
 }
